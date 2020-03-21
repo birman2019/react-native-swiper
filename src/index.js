@@ -258,7 +258,8 @@ export default class extends Component {
 
     this.internals = {
       ...this.internals,
-      isScrolling: false
+      isScrolling: false,
+      offset: initState.offset  // 更新index时,记录当前的offset
     };
     return initState
   }
